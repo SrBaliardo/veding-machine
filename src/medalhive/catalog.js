@@ -1,0 +1,11 @@
+﻿import banner from '../assets/images/bannerMedalHive.jpg';
+import teambee from '../assets/images/hivetroncoin_teambee.png';
+import backdev from '../assets/images/hivetroncoin_backdev.png';
+import frontdev from '../assets/images/hivetroncoin_frontdev.png';
+import hivepower from '../assets/images/hivetroncoin_hivepower.png';
+export const images = { teambee, backdev, frontdev, hivepower };
+export { banner };
+export const money = cents => new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format((cents || 0) / 100);
+export const dateTime = value => value ? new Date(value).toLocaleString('pt-BR', { dateStyle: 'short', timeStyle: 'short' }) : '—';
+export const paymentNames = { PIX: 'PIX', CREDIT: 'Crédito', DEBIT: 'Débito' };
+export const statusNames = { pending: 'Aguardando pagamento', payment_failed: 'Falha no pagamento', paid: 'Pagamento aprovado', dispensing: 'Em dispensa', completed: 'Concluída', interrupted: 'Entrega interrompida', cancelled: 'Cancelada' };
